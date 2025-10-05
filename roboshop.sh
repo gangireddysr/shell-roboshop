@@ -5,7 +5,7 @@ SG_ID="sg-0fa27da592684b3f7"
 #ZONE_ID="Z09552593JUGZ1EDVVGFV" 
 #DOMAIN_NAME="purini.shop"
 
-for instace in $@
+for instance in $@
 
 do
      INSTANCE_ID=$(aws ec2 run-instances --image-id $AMI_ID --instance-type t3.micro --security-group-ids $SG_ID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$instance}]" --query 'Instances[0].InstanceId' --output text)
