@@ -3,7 +3,7 @@
 AMI_ID="ami-09c813fb71547fc4f"
 SG_ID="sg-0fa27da592684b3f7"
 ZONE_ID="Z09552593JUGZ1EDVVGFV" 
-#DOMAIN_NAME="purini.shop"
+DOMAIN_NAME="purini.shop"
 
 for instance in $@
 
